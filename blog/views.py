@@ -1,7 +1,11 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
+from django.views.generic.edit import DeleteView
+from django.urls import reverse_lazy
 from django.http import HttpResponseRedirect
 from .models import Post
+from django.contrib import messages
+from .forms import CreationForm
 
 
 class PostList(generic.ListView):
@@ -36,3 +40,26 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+def create_posts(request):
+    if request.method == 'POST':
+        postitem_form = CreationForm(request.POST, request.FILES)
+        if postitem_form.is_valid():
+            postitem_form.save()
+            messages.success(
+                request, 'You have successfully posted an item!'
+                )
+            return redirect(reverse('home'))
+    else:
+        postitem_form = CreationForm()
+
+    context = {
+        'postitem_form': postitem_form
+    }
+
+    return render(request, "create_posts.html", context)
+
+class DeletePost(DeleteView):
+    model = Post
+    template_name = 'delete_post.html'
+    success_url = reverse_lazy('home')

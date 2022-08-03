@@ -27,9 +27,6 @@
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text ">
-                    {{ post.item | safe }}
-                </p>
                 <div class="row">
 
                     <div class="col-1">
@@ -58,12 +55,38 @@
             <hr>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-md-6 card mb-4 mt-3">
+            <h3>Post Details: </h3>
+            <div class="card-body">
+                <p><strong>Item Name: </strong> {{ post.item | safe }}</p>
+                <p><strong>Location: </strong>{{ post.address | safe }}</p>
+                <p><strong>Phone Number: </strong> {{ post.phone_number | safe }}</p>
+                <p><strong>Item Description: </strong> {{ post.description | safe }}</p>
+            </div>
+        </div>
+    <div class="picinside">
+        {% if "placeholder" in post.featured_image.url %}
+                <img src="https://i.imgur.com/pv9dt38.png">
+                {% else %}
+                <img src=" {{ post.featured_image.url }}">
+                {% endif %}
+    </div>
     <div class="row">
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
                 <!-- For later -->
             </div>
-        </div>
+        </div>  
+    </div>
+    <div>
+        {% if user.is_authenticated and user.id == post.author.id %}
+        <a class="btn user-btn" aria-label="Delete your Post" href="{% url 'delete_post' post.slug %}"
+            role="button">Delete</i></a>
+        {% else %}
+        <p>Only the author can update or delete this post!</p>
+        {% endif %}
     </div>
 </div>
 

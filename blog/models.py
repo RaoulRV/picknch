@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.template.defaultfilters import slugify
 
 
 
@@ -15,9 +16,10 @@ class Post(models.Model):
     featured_image = CloudinaryField('image', default='placeholder')
     short_description = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
+    status = models.IntegerField(choices=STATUS, default=1)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
     address = models.TextField(blank=True)
+    phone_number = models.CharField(max_length=50, null=True)
 
 
     class Meta:
@@ -28,6 +30,11 @@ class Post(models.Model):
 
     def number_of_likes(self):
             return self.likes.count()
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.item)
+        return super().save(*args, **kwargs)    
 
 
 

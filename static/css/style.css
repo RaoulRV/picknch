@@ -9,6 +9,8 @@ body {
     color: #4A4A4F;
 }
 
+
+
 .red-o {
     color: #E84610;
 }
@@ -22,11 +24,11 @@ body {
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #ffffff;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #ffffff;
 }
 
 .card {
@@ -43,7 +45,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #E84610;
 }
 
 .author {
@@ -107,18 +109,18 @@ body {
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #E84610;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #E84610;
 }
 
 .link {
-    color: #23BBBB;
+    color: #E84610;
     text-decoration: none;
 }
 
@@ -141,3 +143,66 @@ body {
     border: none;
 }
 
+.mainlogo {
+    width: 100%;
+    height: auto;
+    max-height: 80px;
+}
+
+
+    .nav-link:active,
+    .nav-link:hover  {
+        font-weight: bolder;
+        text-decoration: underline;
+        
+    }
+#navbarText{
+    font-size: 1.3rem;
+    
+}     
+
+.footer {
+    border-top: 1px solid grey
+}
+
+.footer a{
+    color: #E84610;
+}
+.footer a:hover{
+    color: #ad0000;
+}
+
+.btn-register {
+    background-color: #E84610;
+    color: #FFFFFF;
+}
+
+.btn-register:hover,
+.btn-register:active {
+    background-color: #fff;
+    color: #E84610;
+}
+
+.user-btn{
+    color: #FFFFFF;
+    background-color: #E84610;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.delete:hover {
+    color: #ffffff;
+    background-color: #E84610;
+}
+
+.delete-text {
+    text-align: center;
+    display: block;
+}
+
+.picinside img{
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    max-width: 600px;
+}
