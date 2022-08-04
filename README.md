@@ -1,4 +1,11 @@
 # PICK N CHOOSE
+PICK N CHOOSE is a website that aims to bring together people who are looking to give away older items they have laying around. These items still have value yet often times you have to pay someone to take them away in a skip. 
+
+The website is targeted towards users who wish to avoid paying fees to companies that come and dispose of their old stuff. 
+
+By using the site users can post their items on the main page. Once the item is posted it will be available for other users to look at and decide if they're interested. All communication is intended to be made via telephone, the user will need to provide their phone number when posting the item.
+
+Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
 
 
 
@@ -31,7 +38,7 @@
   * [Testing](#testing)
     + [Manual Testing](#manual-testing)
     + [Validator Testing](#validator-testing)
-    
+
 * [Deployment To Heroku](#deployment---heroku)
 * [Forking](#forking)
 * [Cloning](#cloning)
@@ -39,4 +46,7 @@
 * [Technology Used](#technology-used)
 * [Credits](#credits)
 * [Acknowledgments](#acknowledgments)
-  
+
+## Features
+
+### Header 
