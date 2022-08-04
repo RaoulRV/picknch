@@ -85,7 +85,8 @@
         <a class="btn user-btn" aria-label="Delete your Post" href="{% url 'delete_post' post.slug %}"
             role="button">Delete</i></a>
         {% else %}
-        <p>Only the author can update or delete this post!</p>
+        <a class="btn user-btn" aria-label="Delete your Post" href="{% url 'home' %}"
+        role="button">Delete not Available</i></a>
         {% endif %}
     </div>
 </div>

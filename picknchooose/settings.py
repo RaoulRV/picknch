@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 CSRF_TRUSTED_ORIGINS=['https://8000-raoulrv-picknch-tif4xpbhfq3.ws-eu54.gitpod.io']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
