@@ -207,6 +207,24 @@ body {
     max-width: 600px;
 }
 
+
+/* Heading in Post Item page */
+
+.postitem-heading h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #E84610;
+
+}
+
+
+
+
+
+
+
+
 /* This is where we style the about page - this was taken from codepen */
 
 h1,
