@@ -210,7 +210,7 @@ body {
 
 /* Heading in Post Item page */
 
-.postitem-heading h1 {
+.postitem-heading {
     text-align: center;
     font-weight: bold;
     font-size: 50px;
