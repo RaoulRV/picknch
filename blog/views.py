@@ -14,6 +14,7 @@ class PostList(generic.ListView):
     template_name = 'index.html'
     paginate_by = 6
 
+
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
@@ -32,6 +33,7 @@ class PostDetail(View):
             },
         )
 
+
 class PostLike(View):
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
@@ -40,6 +42,7 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
 
 def create_posts(request):
     if request.method == 'POST':
@@ -59,10 +62,12 @@ def create_posts(request):
 
     return render(request, "create_posts.html", context)
 
+
 class DeletePost(DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
+
 
 def about(request):
     return render(request, "about.html")

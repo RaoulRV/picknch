@@ -27,7 +27,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
-CSRF_TRUSTED_ORIGINS=['https://pickandch.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://pickandch.herokuapp.com']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
