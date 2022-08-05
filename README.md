@@ -1,4 +1,7 @@
 # PICK N CHOOSE
+
+![header](static/images/responsive.PNG)
+
 PICK N CHOOSE is a website that aims to bring together people who are looking to give away older items they have laying around. These items still have value yet often times you have to pay someone to take them away in a skip. 
 
 The website is targeted towards users who wish to avoid paying fees to companies that come and dispose of their old stuff. 
@@ -97,7 +100,7 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
 - Below the description there are 3 cards.
 - Each card is interractive and will change color when hovered over.
 - These cards contain 3 simple steps on how to Register, Log In and Start Posting.
-- These instructions ensure that the user has an good experience when first accessing the website.
+- These instructions ensure that the user has a good experience when first accessing the website.
 
 ### Sign Up Page
 
@@ -171,3 +174,4 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
     - This was left out due to time constraints, however I believe this doesn't affect the site functionality at all. 
     - If the user has given the item away, he can delete his post in order to stop being contacted. 
     - If the user has made a mistake when uploading his post, he can just delete it and upload again.
+    

@@ -226,7 +226,10 @@ body {
 }
 
 
-
+.navbar {
+    border-bottom: 1px grey;
+    
+}
 
 
 
