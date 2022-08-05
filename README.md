@@ -17,8 +17,7 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
 * [Design Idea](#design-idea)
     - [Colour Scheme](#colour-scheme)
     - [Wireframes](#wireframes)
-    - [Images](#images)
-    - [Fonts](#fonts)
+
 * [Features](#features)
     + [Header](#header)
     + [Footer](#footer)
@@ -33,16 +32,13 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
     + [Features Not Implemented](#features-not-implemented)
 
 * [User Experience](#user-experience)
-    + [User Stories](#user-stories)
-    + [Design Idea](#design-idea)
-      - [Colour Scheme](#colour-scheme)
-      - [Wireframes](#wireframes)
-      - [Images](#images)
-      - [Fonts](#fonts)      
+    + [User Stories](#user-stories)    
 
 * [Agile](#agile)
-  * [Data Model](#data-model)
-  * [Testing](#testing)
+
+
+* [Data Model](#data-model)
+* [Testing](#testing)
     + [Manual Testing](#manual-testing)
     + [Validator Testing](#validator-testing)
 
@@ -174,4 +170,92 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
     - This was left out due to time constraints, however I believe this doesn't affect the site functionality at all. 
     - If the user has given the item away, he can delete his post in order to stop being contacted. 
     - If the user has made a mistake when uploading his post, he can just delete it and upload again.
+
+
+## Design Idea
+
+The site design was meant to be as simple and minimalistic as possible. This was done with the clear intention to make the users life easier. The user should be able to access the website and figure out what everything does, regardless of their age or computer knowledge, there is no clutter to confuse them.
+
+### Colour Scheme
+
+
+![header](static/images/colors.PNG)
+
+The main colors of the website are Flame and White/Cultured. This was done to create a contrast between the bright orange and white background. Grey/Dark Liver was also used for the same purpose to make sure everything is readable.
+
+### Wireframes
+
+In the design phase of the website I used Balsamiq to create wireframes in order to get an idea how the site will look.
+
+![header](static/images/homepagewire.PNG)
+
+![header](static/images/postwire.PNG)
+
+![header](static/images/aboutwire.PNG)
+
+
+## User Experience
+
+The site was designed to be easy and intuitive to use.
+A user for our site would have to be an adult that wishes to get rid of old items but he knows they still have value and doesn't want to throw them away. The user should also like to check whats already posted on the site by others, similar to a flea market.
+
+### User Stories
+- User Stories Implemented
+    - View post list: As a Site User I can view a list of posts so that I can select one to read
+    - Open a post: As a Site User I can click on a post so that I can check the item description
+    - View likes: As a Site User / Admin I can view the number of likes - on each post so that I can see which is the most popular or viral
+    - Account registration: As a Site User I can register an account so that I can post and like
+    - Like / Unlike: As a Site User I can like or unlike a post so that I can interact with the content
+    - Manage posts: As a Site Admin I can create, read, update and delete posts so that I can manage my sites content
+    - Create drafts: As a Site Admin I can create draft posts so that I can finish writing the content later
+    - View Address: As a Site User I can see the pick-up address on the main page without clicking on individual posts so that I don't waste any time
+    - Pagination: As a Site User I can view a paginated list of items so that I can select which one I want to view
+    - Phone Numer: As a user I can click on each post and see the posters phone number so that I can contact them about the item
+    - Big picture: As a user I can click on each post and see a bigger picture of the item so that I can check its condition
+    - Post Item: As a user I can post an item on the website so that I can give it away
+    - Delete a post: As a user I can delete a post I have made so that I can remove it when the item has been given away
+
+
+
+- User Stories not yet implemented
+
+    - Search Bar: As a user I can click on the searchbar and type the title of the post im looking for so that I can find what im interested in.
+
+        - This was left out due to time constraints, however I will be adding this the next time I have some free time as its a core functionality of my site.
+
+
+    - Comment on a post: As a Site User I can leave comments on a post so that I can be involved in the conversation
+
+        - This wasn't implemented on purpose because I intended the website communication to be done via phone, thats why the phone number is provided by the poster.
+
+    - Approve comments: As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
+
+        - Same reason as the "Comment on a post" story.
+
+## Agile
+
+In order to complete this project I have used the Agile Methodology.
+This involves breaking down the project into smaller tasks called User Stories. These user stories were added using githubs Issues functionality.
+Each user story was made into an issue and added to the projects kanban board. After each user story was coded into the websites functionality I would move the issue from "To Do" Column into "In Progress" and eventually into "Done" column depending what stage of development it was.
+
+- You can see the live kanban board with all the user stories by [clicking here.](https://github.com/users/RaoulRV/projects/2/views/1)
+
+![header](static/images/kanban.PNG)
+
+## Data Model
+
+I created a diagram in order to help me figure out how my model will look like. Once the diagram was completed I went ahead and created a custom model named Post.
+
+![header](static/images/postmodel.PNG)
+
+
+## Testing
+
+I have conducted thorough testing of the website, as well as some close friends who I have instructed to test the site.
+
+### Manual Testing
+
+In order to save space I have added all the testing results here
+
+
     
