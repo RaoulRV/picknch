@@ -226,8 +226,8 @@ body {
 }
 
 
-.container-fluid {
-    border-bottom: 1px grey;
+.navbar-nav {
+    border-bottom: 2px rgb(0, 0, 0);
     
 }
 
