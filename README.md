@@ -255,7 +255,9 @@ I have conducted thorough testing of the website, as well as some close friends 
 
 ### Manual Testing
 
-In order to save space I have added all the testing results here
+In order to save space I have added all [the testing results here](https://github.com/RaoulRV/picknch/blob/main/static/testing.md)
+
+
 
 
     
