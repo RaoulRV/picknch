@@ -15,9 +15,9 @@
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://i.imgur.com/5iD5xz8.png">
+                                    src="https://i.imgur.com/5iD5xz8.png" alt="Placeholder Image">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="Uploaded Image">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Posted by: {{ post.author }}</p>
