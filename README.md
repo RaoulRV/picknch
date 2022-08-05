@@ -29,6 +29,7 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
     + [Post Detail Page](#post-detail-page)
     + [Post Item Page](#post-item-page)
     + [Delete Post Page](#delete-post-page)
+    + [Admin Page](#admin-page)
     + [Features Not Implemented](#features-not-implemented)
 
 * [User Experience](#user-experience)
@@ -151,6 +152,14 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
 - When clicking on the Delete button at the bottom of the post details page, the user is taken to a Delete Post page.
 - On this page the user is informed what hes trying to delete and then asked if he is sure he wants to delete the post permanently.
 - When clicking the delete button the post will be delete and user will be taken back to the homepage.
+
+### Admin Page
+
+![header](static/images/admin.PNG)
+
+- Admin page has all the functionality required to run the website.
+- This includes full CRUD functionality and power over registered users.
+- Admin Post page also includes Summernote.
 
 ### Features Not Implemented
 
