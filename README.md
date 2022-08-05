@@ -54,7 +54,7 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
 ![header](static/images/header.PNG)
 
 - For the header I created a custom logo using a website called Looka, it was free and not that difficult to use.
-- The custom logo is possitioned on the left side of the nav bar and top left side of the website. When clicking on the logo, the user will be returned back to the homepage.
+- The custom logo is positioned on the left side of the nav bar and top left side of the website. When clicking on the logo, the user will be returned back to the homepage.
 - The navigation bar presents the user with 4 options at all times, however these options will change depending if the user is authenticated or not.
 - Navigation bar is also present throughout every page on the website and it keeps all functionality on all pages.
 - When using a mobile device or a smaller screen the navigation buttons will transform into a dropdown menu.
@@ -62,7 +62,7 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
 
 ![header](static/images/header2.PNG)
 
-- In this second header example we can see that the navigation buttons have changed, thats because the user is logged in and authenticated: Home, About, Post Item, Logout.
+- In this second header example we can see that the navigation buttons have changed, that's because the user is logged in and authenticated: Home, About, Post Item, Logout.
 
 
 ### Footer
@@ -70,7 +70,7 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
 ![header](static/images/footer.PNG)
 
 - In the footer section I have included links to Facebook, Twitter, Instagram and Youtube as well as my github username and year.
-- The icons are fully interractive and have feedback when you mouse over them.
+- The icons are fully interactive and have feedback when you mouse over them.
 - When clicking on the icons, the page will open in a new tab in order to not distract the user.
 
 ### Home Page
@@ -91,7 +91,7 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
 - When clicking on the About button, the user will be taken to the About page.
 - On this page the user can read a brief but accurate description of the website and what its used for.
 - Below the description there are 3 cards.
-- Each card is interractive and will change color when hovered over.
+- Each card is interactive and will change color when hovered over.
 - These cards contain 3 simple steps on how to Register, Log In and Start Posting.
 - These instructions ensure that the user has a good experience when first accessing the website.
 
@@ -111,7 +111,7 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
 
 - On the Log In page the user is presented again with a form to fill out.
 - This form includes: Username and Password and a tickbox for Remember me.
-- Once he user has filled out the fields and clicked Sign in he will be presented with a sucess message.
+- Once he user has filled out the fields and clicked Sign in he will be presented with a success message.
 - Django allauth was also used here.
 
 ### Log Out Page
@@ -131,7 +131,7 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
 - Below that we can see a heart which symbolizes the number of likes this post has received from different users.
 - In the Post Details section we can see accurate details about the item including: Name, Location, Users Phone number and Item description.
 - Below that there is a bigger picture of the item in question which will help the user better understand its condition.
-- If the user is looking at his own post, he will be prestend with a Delete button if he desires to delete the post, for example if someone has already picked up the stuff hes giving away.
+- If the user is looking at his own post, he will be presented with a Delete button if he desires to delete the post, for example if someone has already picked up the stuff hes giving away.
 - If user is looking at someone else's post, the Delete button will say not available.
 
 
@@ -207,7 +207,7 @@ A user for our site would have to be an adult that wishes to get rid of old item
     - Create drafts: As a Site Admin I can create draft posts so that I can finish writing the content later
     - View Address: As a Site User I can see the pick-up address on the main page without clicking on individual posts so that I don't waste any time
     - Pagination: As a Site User I can view a paginated list of items so that I can select which one I want to view
-    - Phone Numer: As a user I can click on each post and see the posters phone number so that I can contact them about the item
+    - Phone Number: As a user I can click on each post and see the posters phone number so that I can contact them about the item
     - Big picture: As a user I can click on each post and see a bigger picture of the item so that I can check its condition
     - Post Item: As a user I can post an item on the website so that I can give it away
     - Delete a post: As a user I can delete a post I have made so that I can remove it when the item has been given away
@@ -216,14 +216,14 @@ A user for our site would have to be an adult that wishes to get rid of old item
 
 - User Stories not yet implemented
 
-    - Search Bar: As a user I can click on the searchbar and type the title of the post im looking for so that I can find what im interested in.
+    - Search Bar: As a user I can click on the searchbar and type the title of the post I'm looking for so that I can find what I'm interested in.
 
         - This was left out due to time constraints, however I will be adding this the next time I have some free time as its a core functionality of my site.
 
 
     - Comment on a post: As a Site User I can leave comments on a post so that I can be involved in the conversation
 
-        - This wasn't implemented on purpose because I intended the website communication to be done via phone, thats why the phone number is provided by the poster.
+        - This wasn't implemented on purpose because I intended the website communication to be done via phone, that's why the phone number is provided by the poster.
 
     - Approve comments: As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
 
@@ -266,11 +266,11 @@ Issue No. | Title | Acceptance criteria | Testing carried out
 #05 | Site pagination | User can select each item to view and change pages | Created multiple user profiles and multiple posts in order to check if everything works, also clicked the "Next" button to make sure it goes to next page
 #06 | View Address | User can see posters address on main page | Made multiple posts and logged out to ensure I can still see the address for each post
 #07 | View post list | All site visitor users can view the post list | Making sure every single post is visible on the home page to every user regardless if hes logged in or not, also making sure posts with draft status aren't visible. 
-#08 | Open a post | Every user can open an individual post and view the contents inside but not interract with the post | Ensured the post details are available to everyone that clicks on the individual post, tested the link that opens post and it never failed, also made sure non-authenticated users cannot interract with the post at all
+#08 | Open a post | Every user can open an individual post and view the contents inside but not interact with the post | Ensured the post details are available to everyone that clicks on the individual post, tested the link that opens post and it never failed, also made sure non-authenticated users cannot interact with the post at all
 #09 | Phone Number | Every user can click on post details and see posters phone number | Created multiple user profiles and multiple posts where I added my number then logged out to make sure any non-authenticated or authenticated user can see the phone number
 #10 | Big picture | A good sized picture of the item visible in post details | Manually added multiple posts and uploaded many different images to make sure they are properly displayed in the post details page, also checked if they are responsive
 #11 | Delete a post | Authenticated user can delete his own posts but no one else's | Manually created multiple users and made a single post for each, then i logged in to different accounts to make sure a user can only delete his own post
-#12 | Like/Unlike | Likes are visible to everyone but only registered users can interract with the button | Made sure I cannot use the like button while logged out, tested if it worked while i was logged in and checked to see if I can remove a like aswell as add a like to a post
+#12 | Like/Unlike | Likes are visible to everyone but only registered users can interact with the button | Made sure I cannot use the like button while logged out, tested if it worked while i was logged in and checked to see if I can remove a like aswell as add a like to a post
 #13 | View Likes | Likes properly saved and displayed on the homepage/post details | Liked and unliked manually on different user profiles and refreshed many times to see if they displayed properly on both pages
 #14 | Searchbar | Not implemented | No tests
 #15 | Comment | Not implemented | No tests
@@ -282,7 +282,7 @@ Issue No. | Title | Acceptance criteria | Testing carried out
 | --- | --- | --- | --- | 
 | Admin CRUD | Admin account can create/update/delete posts | Created admin account, logged in and clicked every button for create,update or delete| Pass |
 | Admin restricted access | Access to admin page is not available to normal users | Created a normal user and attempted to log into the admin page | Pass |
-| Non Authenticated user/like  | Like button is visible but not activated/interractable | Logged out and refreshed the page to test if I can use the like button | Pass |  
+| Non Authenticated user/like  | Like button is visible but not activated/interactable | Logged out and refreshed the page to test if I can use the like button | Pass |  
 | Non Authenticated user/create  | Post Item option is not visible if you're logged out|Logged out and refreshed the page many times, clicked on different pages of the website to check if Post Item is visible| Pass | 
 | Registration/ left blank |A message appearing that says "fill out this field"| Attempted to create an account with fields left blank or adding a space and then clicking sign up| Pass | 
 | Registration/ bad email| A message appearing that instructs you about email address format| Tried creating an account by using random letters and numbers, also by not finishing the address after "@"| Pass | 
@@ -291,7 +291,7 @@ Issue No. | Title | Acceptance criteria | Testing carried out
 | Login/ Blank Field | A message instructing you to fill out this field|Attempted to log in without filling up the username field | Pass | 
 |Login/ Incorrect Username|A message that says "username or password you specified are not correct"|Tried logging in with random letters and numbers in the username field| Pass |
 |Login/ Incorrect Password| A message that says "username or password you specified are not correct"|Tried logging in with random letters and numbers in the password field| Pass |
-|Logged in/ like  | Like button is visible and active| Created a new user, logged in and clicked on the like button to see if I can interract with it| Pass | 
+|Logged in/ like  | Like button is visible and active| Created a new user, logged in and clicked on the like button to see if I can interact with it| Pass | 
 |Logged in/ Post Item  |Post Item button is visible in navigation bar|Created a new user and logged in, checked in the top left to see if Post Item was there, also clicked on it| Pass | 
 |Post Item/ no image |The placeholder image should take its place| Created a new account and logged in, created a new post but didn't upload a picture and refreshed to check the homepage | Pass |
 |Post Item/ Blank Fields |Not allowed to post if required fields are empty| Logged in and pressed on Post Item button, left every field empty and pressed on Post| Pass |
@@ -327,7 +327,7 @@ I've used Heroku to host my website and in the following steps I will be describ
 - 3. You will be directed to your dashboard once logged in.
 - 4. Click on the button called "New" in the top right corner of the screen.
 - 5. Click on Create new app from the drop down menu.
-- 6. Choose an App Name and choose a region thats closest to your location, then click Create app.
+- 6. Choose an App Name and choose a region that's closest to your location, then click Create app.
 - 7. Click on Settings and then click on "Config Vars"
 - 8. After clicking on "Reveal Config Vars" please copy the following configuration:
     - CLOUDINARY_URL : < your cloudinary id goes here >
