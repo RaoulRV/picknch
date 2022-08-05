@@ -42,13 +42,10 @@ Live link to [PICK N CHOOSE](https://pickandch.herokuapp.com/)
     + [Manual Testing](#manual-testing)
     + [Validator Testing](#validator-testing)
 
-* [Deployment To Heroku](#deployment---heroku)
-* [Forking](#forking)
-* [Cloning](#cloning)
-* [Languages](#languages)
+* [Deployment To Heroku](#deployment-to-heroku)
 * [Technology Used](#technology-used)
 * [Credits](#credits)
-* [Acknowledgments](#acknowledgments)
+
 
 ## Features
 
@@ -308,7 +305,71 @@ Issue No. | Title | Acceptance criteria | Testing carried out
 |Pagination|Next button appears on the bottom of the page and its clickable|Scrolled down and clicked on next button| Pass |
 |Footer Socials|Social icons appear in the footer and open their pages in a new tab| Clicked on the social icons on the bottom of the page| Pass |
 
+## Validator Testing
 
+### CSS Validator
+I ran the CSS code through W3C Validator and returned no errors:
+![header](static/images/cssvalidator.PNG)
+### HTML Validator
+I ran the entire website through HTML Validator as well and returned no errors:
+![header](static/images/htmlvalidator.PNG)
+### Pep8 Validator
+I also ran all of the python code through Pep8 validator and returned no errors:
+![header](static/images/pepmodels.PNG)
+![header](static/images/pepviews.PNG)
+
+## Deployment To Heroku
+
+I've used Heroku to host my website and in the following steps I will be describing how to deploy your project to Heroku as well;
+
+- 1. Access https://www.heroku.com
+- 2. Create an account and log in.
+- 3. You will be directed to your dashboard once logged in.
+- 4. Click on the button called "New" in the top right corner of the screen.
+- 5. Click on Create new app from the drop down menu.
+- 6. Choose an App Name and choose a region thats closest to your location, then click Create app.
+- 7. Click on Settings and then click on "Config Vars"
+- 8. After clicking on "Reveal Config Vars" please copy the following configuration:
+    - CLOUDINARY_URL : < your cloudinary id goes here >
+    - DATABASE_URL : < your postgres database key goes here>
+    - SECRET_KEY = < the secret key you add her will need to be added in the settings.py file as well>
+    - PORT : 8000
+    - DISABLE_COLLECTSTATIC = 1 (remove this before final deployment)
+- 9. In the "Buildpacks" field, click on the Add buildpack button.
+- 10. Choose /herokupython and then save.
+- 11. Click on the deploy tab at the top of the page.
+- 12. In the deployment method choose github and then log in with your github account.
+- 13. Choose which repository you want to deploy.
+- 14. Scroll down and click the Deploy button.
+- 15. Done!
+
+## Technology Used
+
+- HTML5
+- CSS3
+- Python
+- Django
+- Cloudinary
+- Bootstrap
+- FontAwesome
+- Google Fonts
+- GitPod
+- GitHub
+- DevTools
+- Heroku
+- Balsamiq
+- PostgreSQL
+- Allauth
+- Summernote
+
+
+## Credits
+- Looka - Created custom logo
+- "Hello Django" and "I think therefore I blog" - Structure of this project is mainly based on those 2 lessons
+- Previous projects done by Code Institute students - Also a big source of inspiration
+- Pictures uploaded on my website are from https://www.google.com/
+- About page code is taken from https://www.codepen.io
+- Code Institute Tutor Team - They were a huge help and I couldn't complete this project without them.
 
 
 
